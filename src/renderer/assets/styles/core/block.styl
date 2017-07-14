@@ -1,0 +1,95 @@
+.ui-blockHeader
+    padding: 0 0 0 15px
+    height: 40px
+    line-height: @height
+    &+.ui-block
+        margin: 0
+.ui-block
+    background: #fff
+    border-top: 1px solid #e0e0e0
+    border-bottom: 1px solid #e0e0e0
+    margin: 15px 0
+    padding: 0 0 0 15px
+    &:last-child
+        margin-top: 0
+    &:first-child
+        margin-top: 15px
+    .ui-cell
+        &:last-child
+            .text
+                border-color: #fff
+        .text
+            border-bottom: 1px solid #e0e0e0
+            font-size: 15px
+            flex: 1
+        .tag
+            width: 33px
+            position: relative
+            .icon
+                transform: translate(0, -50%)
+                top: 50%
+                left: 0
+                position: absolute
+                color: #a6a6a6
+                font-size: 20px
+            &.right
+                position: absolute
+                height: 100%
+                right: 0
+                color: #cacbcc
+                width: auto
+                min-width: 33px
+                max-width: 70%
+                overflow: hidden
+                .icon
+                    left: auto
+                    right: 15px
+                    font-size: 16px
+                    &+.value
+                        padding-right: 35px
+                .value
+                    height: 44px
+                    padding-right: 15px
+                    display: block
+                    text-align: right
+                    color: #999
+            &.left
+                position: absolute
+                height: 100%
+                left: 90px
+                width: auto
+                min-width: 33px
+                max-width: 70%
+            &.ui-input
+                position: absolute
+                height: 100%
+                right: 15px
+                width: 70%
+                border: 0 none
+                text-align: right
+        &.multi
+            height: auto
+            min-height: 44px
+            border-bottom: 1px solid #e0e0e0
+            .title
+                width: 40px
+            .content
+                flex: 1
+                padding: 7px 15px 0 0
+                min-height: 30px
+                line-height: @min-height
+                color: #999
+        .vux-cell-box
+            position: absolute
+            width: auto
+            min-width: 200px
+            max-width: 70%
+            right: 15px
+            top: -1px
+
+    .logout
+        text-align: center
+        width: 100%
+
+    .ui-text
+        padding: 15px 15px 15px 0
